@@ -1,20 +1,15 @@
-module.exports = (api) => {
+module.exports = function (api) {
   api.cache(true);
   return {
-    env: {
-      development: {
-        plugins: [
-          "@babel/transform-react-jsx-source",
-          "react-native-reanimated/plugin",
-          [
-            "module-resolver",
-            {
-              root: ["./src"],
-            },
-          ],
-        ],
-      },
-    },
     presets: ["babel-preset-expo"],
+    plugins: [
+      [
+        "module-resolver",
+        {
+          extensions: [".tsx", ".ts", ".js", ".json"],
+        },
+      ],
+      "react-native-reanimated/plugin",
+    ],
   };
 };
