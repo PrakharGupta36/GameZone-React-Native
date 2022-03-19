@@ -12,6 +12,7 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: "#171b20",
   },
   containerHome: {
+    display: "flex",
     flex: 1,
     paddingTop: 30,
     backgroundColor: "#171b20",
@@ -73,9 +74,29 @@ export const globalStyles = StyleSheet.create({
     marginTop: 30,
   },
   list: {
-    flex: 1,
+    display: "flex",
+    flex: 3,
   },
   modal: {
     flex: 1,
   },
+  button: {
+    flex: 1,
+    position: "absolute",
+    backgroundColor: "#0077B6",
+    borderRadius: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 3,
+    left: 350,
+    top: 580,
+    padding: 10,
+    elevation: 3,
+  },
 });
+
+{
+  /* <Button mode={"contained"} onPress={props.modalFunction}>
+            Submit
+          </Button> */
+}

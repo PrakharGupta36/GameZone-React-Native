@@ -9,12 +9,12 @@ export default function ReviewDetails({ navigation }) {
     <View style={globalStyles.containerReview}>
       <View>
         <Card style={globalStyles.card}>
-          <Card.Cover
+          {/* <Card.Cover
             fadeDuration={400}
-            source={require(`../assets/images/${navigation.getParam(
-              "key"
-            )}.jpeg`)}
-          />
+            source={require("../assets/images/" +
+              navigation.getParam("key") +
+              ".jpeg")}
+          /> */}
           <Card.Title title={navigation.getParam("title")} />
           <Card.Content>
             <Text style={globalStyles.textReview}>

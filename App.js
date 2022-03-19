@@ -1,5 +1,5 @@
 import AppLoading from "expo-app-loading";
-
+import React from "react";
 import {
   useFonts,
   Poppins_300Light,
